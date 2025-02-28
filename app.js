@@ -37,6 +37,7 @@ sequelize
 app.get("/users", async (req, res) => {
   try {
     const users = await User.findAll();
+    console.log(users);
     res.json(users);
   } catch (error) {
     res.status(500).json({ message: "Error fetching users", error });
@@ -48,6 +49,7 @@ app.post("/users", async (req, res) => {
   try {
     const { username, email, password_hash, role } = req.body;
     const newUser = await User.create({ username, email, password_hash, role });
+    console.log(newUser);
     res.status(201).json(newUser);
   } catch (error) {
     res.status(500).json({ message: "Error creating user", error });
