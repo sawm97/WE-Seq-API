@@ -25,7 +25,7 @@ const app = express();
 app.use(express.json());
 
 // Swagger UI route
-app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/documentation", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // **Cek koneksi database sebelum menjalankan server**
 sequelize
