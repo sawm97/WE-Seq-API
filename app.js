@@ -1,11 +1,13 @@
 const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./src/config/swagger');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+// Swagger UI route
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
