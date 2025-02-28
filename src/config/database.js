@@ -11,8 +11,8 @@ const sequelize = new Sequelize(
   logging: false, // Matikan logging SQL di console
 });
 
-sequelize.authenticate()
-  .then(() => console.log("Database connected!"))
-  .catch(err => console.error("Connection error:", err));
+// sequelize.authenticate()
+//   .then(() => console.log("Database connected!"))
+//   .catch(err => console.error("Connection error:", err));
 
 module.exports = sequelize;
