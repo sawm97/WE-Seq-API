@@ -10,7 +10,7 @@ const options = {
         },
         servers: [
             {
-                url: 'https://walahirelecapi.azurewebsites.net/api',
+                url: 'https://we-seq-api.azurewebsites.net/api',
             }
         ],
     },

@@ -10,5 +10,5 @@ app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`App listening at https://we-seq-api.azurewebsites.net/`);
 });
