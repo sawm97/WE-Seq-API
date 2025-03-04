@@ -15,9 +15,9 @@
 
 const express = require("express");
 const swaggerUi = require("swagger-ui-express");
-const swaggerSpec = require("./src/config/swagger");
-const sequelize = require("./src/config/database"); // Import koneksi Sequelize
-const User = require("./src/models/userModel"); // Import Model User
+const swaggerSpec = require("./config/swagger");
+const sequelize = require("./config/database"); // Import koneksi Sequelize
+const User = require("./models/userModel"); // Import Model User
 
 const app = express();
 
