@@ -21,7 +21,7 @@ sequelize
   .then(() => console.log("✅ Database connected!"))
   .catch((err) => console.error("❌ Database connection error:", err));
 
-app.use("/api/users", userRoutes);
+app.use("/users", userRoutes);
 
 app.listen(process.env.DB_PORT, () => {
   console.log(`🚀 App listening at https://we-seq-api.azurewebsites.net/`);

@@ -10,11 +10,11 @@ const options = {
         },
         servers: [
             {
-                url: 'https://we-seq-api.azurewebsites.net/api',
+                url: 'https://we-seq-api.azurewebsites.net/',
             }
         ],
     },
-    apis: ['../routes/*.js'] // Path to the API docs
+    apis: ['./routes/*.js'] // Path to the API docs
     // apis: ['./routes/productRoutes.js', './routes/categoryRoutes.js'] // Path to the API docs
 };
 
